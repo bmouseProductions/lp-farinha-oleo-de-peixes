@@ -1,4 +1,4 @@
-import farinha from "../../assets/farinhaSalmao.webp";
+import farinha from "../../assets/oleoSalmao-f329ce04.webp";
 import Botao from "../button/Index";
 
 export default function Section1() {

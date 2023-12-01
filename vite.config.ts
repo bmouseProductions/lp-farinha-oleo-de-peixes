@@ -10,5 +10,5 @@ export default defineConfig({
     },
   },
 
-  base: '/farinha-de-oleo-de-peixe'
+  base: '/oleo-de-peixe'
 })
