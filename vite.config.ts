@@ -9,5 +9,6 @@ export default defineConfig({
       '@': '/src',
     },
   },
+
   base: '/farinha-de-oleo-de-peixe'
 })
