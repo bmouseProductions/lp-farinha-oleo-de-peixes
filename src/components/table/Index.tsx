@@ -9,13 +9,13 @@ import Paper from "@mui/material/Paper";
 
 function createData(
   name: string,
+  tangua: string,
+  patos: string,
   biguacu: string,
   itajai: string,
-  tangua: string,
-  itauna: string,
-  patos: string
+  parana: string
 ) {
-  return { name, biguacu, itajai, tangua, itauna, patos };
+  return { name, tangua, patos, biguacu, itajai, parana };
 }
 
 const rows = [
@@ -112,11 +112,11 @@ export default function BasicTable() {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.itauna}</TableCell>
-              <TableCell align="right">{row.patos}</TableCell>
               <TableCell align="right">{row.tangua}</TableCell>
+              <TableCell align="right">{row.patos}</TableCell>
               <TableCell align="right">{row.biguacu}</TableCell>
               <TableCell align="right">{row.itajai}</TableCell>
+              <TableCell align="right">{row.parana}</TableCell>
             </TableRow>
           ))}
         </TableBody>
