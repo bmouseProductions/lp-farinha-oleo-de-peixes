@@ -22,9 +22,9 @@ export default function Section2() {
       >
         <h2 className="text-4xl font-bold w-full text-center">Aplicação</h2>
         <p className=" md:text-center mt-5 text-xl ">
-          A Farinha de Peixe é utilizada como ingrediente na fabricação de
-          rações balanceadas de animais não ruminantes, sendo incluída em dietas
-          de aves, suínos, peixes e rações pet.
+          O Óleo de Peixe é utilizado como ingrediente na fabricação de rações
+          balanceadas de animais não ruminantes, sendo incluída em dietas de
+          aves, suínos, peixes e rações pet.
         </p>
       </div>
 
@@ -33,10 +33,8 @@ export default function Section2() {
         <div data-aos="fade-up-left" data-aos-duration="1500">
           <h2 className="text-4xl font-bold w-full text-center">Composição</h2>
           <p className=" md:text-center mt-5 text-xl mb-7">
-            Peixes inteiros, partes de peixes (resíduo) e fauna acompanhante de
-            pescado, antioxidante BHA (INS 320) e BHT (INS 321) ou etoxiquim
-            (substituto), antibacteriano a base de formaldeído ou antibacteriano
-            a base de ácidos orgânicos.
+            Óleo de Peixe <br />
+            Óleo de Pescado e antioxidante
           </p>
         </div>
         <div className="w-full" data-aos="flip-up" data-aos-duration="1500">
@@ -47,47 +45,26 @@ export default function Section2() {
       {/* ACCORDION */}
       <div className="w-full px-5 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-2 lg:gap-5 mb-14 lg:mb-20 ">
         <div
-          className="w-full  flex flex-col items-center lg:items-end gap-2 lg:gap-3"
+          className="w-full  flex flex-col items-center  gap-2 lg:gap-3"
           data-aos="fade-down-right"
           data-aos-duration="1500"
         >
           <AcordionComponent
             id="accordion1"
-            title="Parâmetro Microbiológico "
-            text="Salmonella sp"
-            style="w-full md:w-[450px] rounded" //syles gerais
-          />
-
-          <AcordionComponent
-            id="accordion2"
-            title="Níveis de Garantia"
-            text="Ausência em 25g"
-            style="w-full md:w-[450px] rounded" //syles gerais
-          />
-
-          <AcordionComponent
-            id="accordion4"
-            title="Prazo de Validade"
+            title="PRAZO DE VALIDADE"
             text="180 dias a partir da data de fabricação."
             style="w-full md:w-[450px] rounded" //syles gerais
           />
-        </div>
-
-        <div
-          className="w-full  flex flex-col items-center lg:items-start gap-2 lg:gap-3"
-          data-aos="fade-down-left"
-          data-aos-duration="1500"
-        >
           <AcordionComponent
-            id="accordion5"
-            title="Modos de conservação"
-            text="Local seco, ventilado, sobre estrados e afastado de paredes."
+            id="accordion2"
+            title="MODO DE CONSERVAÇÃO"
+            text="Armazenamento em tanques."
             style="w-full md:w-[450px] rounded" //syles gerais
           />
           <AcordionComponent
-            id="accordion4"
-            title="Comercialização"
-            text="Sacos ráfia 25 Kg, Big bag ráfia 800 a 1500 Kg, granel."
+            id="accordion3"
+            title="COMERCIALIZAÇÃO"
+            text="A granel, bombonas de polietileno, octabins."
             style="w-full md:w-[450px] rounded" //syles gerais
           />
         </div>

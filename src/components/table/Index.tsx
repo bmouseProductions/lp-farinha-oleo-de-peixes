@@ -9,65 +9,55 @@ import Paper from "@mui/material/Paper";
 
 function createData(
   name: string,
+  tangua: string,
+  patos: string,
   biguacu: string,
   itajai: string,
-  tangua: string,
-  itauna: string,
-  patos: string
+  parana: string
 ) {
-  return { name, biguacu, itajai, tangua, itauna, patos };
+  return { name, tangua, patos, biguacu, itajai, parana };
 }
 
 const rows = [
   createData(
+    "Acidez livre em ácido oleico (máx.)",
+    "6,0%",
+    "6,0%",
+    "6,0%",
+    "6,0%",
+    "6,0%"
+  ),
+  createData(
     "Umidade e substâncias voláteis (máx.)",
-    "10%",
-    "10%",
-    "10%",
-    "8%",
-    "10%"
+    "1,0%",
+    "1,0%",
+    "2,0%",
+    "1,0%",
+    "1,0%"
   ),
   createData(
-    "Proteína Bruta (mín.)",
-    "55,0% - 68,0%",
-    "55,0% - 64,0%",
-    "54,0% - 60,0%",
-    "54,0% - 60,0%",
-    "55,0% - 62,0%"
-  ),
-  createData("Extrato Etéreo (mín.)", "4,0%", "4,0%", "6,0%", "6,0%", "4,0%"),
-  createData(
-    "Matéria Mineral (máx.)",
-    "22,0 - 28,0%",
-    "28,0 - 32,0%",
-    "23,0% - 30,0%",
-    "23,0% - 30,0%",
-    "23,0 - 28,0%"
+    "Impurezas sedimentáveis (máx.)",
+    "1,0%",
+    "1,0%",
+    "1,0%",
+    "1,0%",
+    "1,0%"
   ),
   createData(
-    "Cloreto exp em NaCl (máx.)",
-    "5,0%",
-    "5,0%",
-    "5,0%",
-    "5,0%",
-    "5,0%"
-  ),
-  createData("FFA (máx.)", "10,0%", "10,0%", "10,0%", "10,0%", "10,0%"),
-  createData(
-    "TVN (máx.)",
-    "150 mg/100 g",
-    "150 mg/100 g",
-    "150 mg/100 g",
-    "150 mg/100 g",
-    "150 mg/100 g"
+    "EPA + DHA (mín – máx.)",
+    "15,0 - 20,0%",
+    "15,0 - 20,0%",
+    "15,0 - 20,0%",
+    "15,0 - 20,0%",
+    "15,0 - 20,0%"
   ),
   createData(
-    "Histamina (máx.)",
-    "1.000 ppm",
-    "1.000ppm",
-    "1.000pm",
-    "1.000ppm",
-    "1.000pm"
+    "Extrato etéreo (mín)",
+    "98,0%",
+    "98,0%",
+    "98,0%",
+    "98,0%",
+    "98,0%"
   ),
 ];
 
@@ -112,11 +102,11 @@ export default function BasicTable() {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.itauna}</TableCell>
-              <TableCell align="right">{row.patos}</TableCell>
               <TableCell align="right">{row.tangua}</TableCell>
+              <TableCell align="right">{row.patos}</TableCell>
               <TableCell align="right">{row.biguacu}</TableCell>
               <TableCell align="right">{row.itajai}</TableCell>
+              <TableCell align="right">{row.parana}</TableCell>
             </TableRow>
           ))}
         </TableBody>

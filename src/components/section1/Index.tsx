@@ -19,13 +19,13 @@ export default function Section1() {
         >
           <div className="w-full flex flex-col">
             <h1 className="mb-5 text-[60px] md:text-[115px] leading-[75px] md:leading-[100px] font-bold text-white text-center lg:text-start">
-              Farinha de Peixe
+              Óleo de Peixe
             </h1>
           </div>
           <h2 className="mt-4 font-semibold text-white text-center md:text-start mb-10 md:text-[20px]">
-            A Farinha de Peixe é utilizada como ingrediente na fabricação de
-            rações balanceadas de animais não ruminantes, sendo incluída em
-            dietas de aves, suínos, peixes e rações pet.
+            O Óleo de Peixe é utilizado como ingrediente na fabricação de rações
+            balanceadas de animais não ruminantes, sendo incluída em dietas de
+            aves, suínos, peixes e rações pet.
           </h2>
           <Botao>Chamar no WhatsApp</Botao>
         </div>
